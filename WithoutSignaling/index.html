@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Peer-To-Peer</title>
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div id="main">
+                <h1>WebRTC P2P Video Chat</h1>
+                <p style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: grey;">A simple demo of peer-to-peer video & audio sharing.</p>
+                <div id="video">
+                        <div class="user">
+                                <h2>Your Video</h2>
+                                <video autoplay class="videoscreen" id = "user1"></video>
+                        </div>
+                        <div class="user">
+                                <h2>Friend's Video</h2>
+                                <video autoplay class="videoscreen" id = "user2"></video>
+                        </div>
+                </div>
+                <div id="controls">
+                        <button class="ctlbtn" style="background-color: #3B82F6; color: white;">Camera</button>
+                        <button class="ctlbtn" style="background-color: #3B82F6; color: white;">Mic</button>
+                        <button class="ctlbtn" style="background-color: #DC2626; color: white;">Hang Up</button>
+                </div>
+                <div id = "step1and2">
+                        <div class="offerarea">
+                                <h3>Step 1: Create Offer(User1)</h3>
+                                <button style="background-color: #86EFAC; color: white;">Create Offer</button>
+                                <textarea name="" id="" placeholder="1. Click 'Create Offer', then copy this text and send to User 2."></textarea>
+                        </div>
+                        <div class="offerarea">
+                                <h3>Step 1: Create Answer(User2)</h3>
+                                <textarea name="" id="" placeholder="1. Paste User 1's offer text here."></textarea>
+                                <button style="background-color: #D8B4FE; color: white;">Create Answer</button>
+                                <textarea name="" id="" placeholder="2. Click 'Create Answer', then copy this text and send back to User 1."></textarea>
+                        </div>
+                </div>
+                <div class="finalarea">
+                        <h3>Step 1: Step 3: Add Answer (User 1)</h3>
+                        <textarea name="" id="" placeholder="1. Paste User 2's answer text here."></textarea>
+                        <button style="background-color: #0D9488; color: white;">Add Answer</button>
+                </div>
+        </div>
+        <script src="script.js"></script>
+</body>
+</html>
