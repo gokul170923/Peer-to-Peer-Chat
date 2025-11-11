@@ -47,6 +47,7 @@ body{
         height: 87%;
         background-color: #111827;
         border-radius: 15px;
+        object-fit: cover;
 }
 
 #controls{
